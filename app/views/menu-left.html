@@ -1,8 +1,8 @@
+<p>Olá, <strong>fulano</strong></p>
 <div class="menu-left">
 	<ul>
-		<li><a href="my-account">Minha conta</a></li>
-		<li><a href="adrress-list">Endereços de endrega</a></li>
-		<li><a class="active" href="#">Histórico de pedido</a></li>
-		<li><a href="#">Lista de desejos</a></li>
+		<li ng-repeat="item in listMenu">
+			<a href="{{item.link}}" ng-class="{ active: $location.path() == '/{{item.link}}'}">{{item.label}}</a>
+		</li>
 	</ul>
 </div>

@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name testDafitiApp.controller:MainCtrl
+ * @name testDafitiApp.controller:OrderhistoryCtrl
  * @description
- * # MainCtrl
+ * # OrderhistoryCtrl
  * Controller of the testDafitiApp
  */
 angular.module('testDafitiApp')
-  .controller('MainCtrl', function () {
+  .controller('OrderhistoryCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

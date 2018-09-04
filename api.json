@@ -1,0 +1,16 @@
+{
+  "myAccount": [
+    {
+      "name": "Wellington",
+      "lastName": "Soares",
+      "email": "wesoares90@gmail.com",
+      "id": 1
+    }
+  ],
+  "addressList": [
+    {
+      "address": "Rua 1",
+      "cep": "02813020"
+    }
+  ]
+}

@@ -28,7 +28,17 @@ $routeProvider
         templateUrl: 'views/adrress-list.html',
         controller: 'AddresslistCtrl',
         controllerAs: 'adrress'
-    })    
+    }) 
+    .when('/order-history', {
+        templateUrl: 'views/order-history.html',
+        controller: 'OrderhistoryCtrl',
+        controllerAs: 'history'
+    }) 
+    .when('/wishlist', {
+        templateUrl: 'views/wishlist.html',
+        controller: 'WishlistCtrl',
+        controllerAs: 'wishlist'
+    })            
     .otherwise({
         redirectTo: '/'
     });

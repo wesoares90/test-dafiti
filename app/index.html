@@ -17,21 +17,17 @@
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
+    <base href="/test-dafiti/" />
     <body ng-app="testDafitiApp">
 
-        <base href="/test-dafiti/" />
-
-        <div ng-include="'views/header.html'"></div>
+        <header>
+            <div class="container-fluid text-center">
+                <a href="#"><img src="https://dafitistatic-a.akamaihd.net/images/dafiti-logo.png" alt="Dafiti"></a>
+            </div>  
+        </header>
 
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <menuleft></menuleft>
-                </div>
-                <div class="col-md-9">
-                    <div ng-view=""></div>
-                </div>    
-            </div>
+            <div ng-view=""></div>
         </div>
 
         <!-- build:js(.) scripts/vendor.js -->

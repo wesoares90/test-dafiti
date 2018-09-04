@@ -19,7 +19,7 @@ angular
 ])
 .config(function ($routeProvider, $locationProvider, $httpProvider) {
 $routeProvider
-    .when('/', {
+    .when('/my-account', {
         templateUrl: 'views/my-account.html',
         controller: 'MyaccountCtrl',
         controllerAs: 'account'
@@ -40,7 +40,7 @@ $routeProvider
         controllerAs: 'wishlist'
     })            
     .otherwise({
-        redirectTo: '/'
+        redirectTo: '/my-account'
     });
 
     $locationProvider.html5Mode(true);

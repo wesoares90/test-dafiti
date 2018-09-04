@@ -46,7 +46,6 @@ angular.module('testDafitiApp')
 
 	};
 
-
 	$public.init = function () {
 
 		$public.getAccount();

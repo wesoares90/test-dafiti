@@ -1,4 +1,11 @@
-# test-dafiti
+# test-dafiti (em progresso)
+
+API CRIADA 
+- https://test-dafiti.herokuapp.com/
+
+PREVIEW
+
+
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.16.0.

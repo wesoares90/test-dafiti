@@ -10,7 +10,7 @@
 angular.module('testDafitiApp')
 .factory('ApiMethods', function ($resource) {
 
-    return $resource('http://localhost:3000/:route/:update/:userId', { }, {
+    return $resource('https://test-dafiti.herokuapp.com/:route/:update/:userId', { }, {
         
         query: { 
             method: 'GET', 

@@ -40,7 +40,7 @@ $routeProvider
         controllerAs: 'wishlist'
     })            
     .otherwise({
-        redirectTo: '/'
+        redirectTo: '/my-account'
     });
 
     $locationProvider.html5Mode(true);

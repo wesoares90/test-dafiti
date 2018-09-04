@@ -130,24 +130,7 @@ module.exports = function (grunt) {
       dist: {
         options: {
           open: true,
-          middleware: function (connect) {
-            return [
-              modRewrite([
-                '(.*)\/test-dafiti\/ /$1',
-                '^[^\\.]*$ /index.html [L]'
-              ]),            
-              connect.static('.tmp'),
-              connect().use(
-                '/bower_components',
-                connect.static('./bower_components')
-              ),
-              connect().use(
-                '/app/styles',
-                connect.static('./app/styles')
-              ),
-              connect.static(appConfig.app)
-            ];
-          }          
+          base: '<%= yeoman.dist %>'         
         }
       }
     },

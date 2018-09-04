@@ -17,9 +17,13 @@
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
-    <base href="/test-dafiti/" />
+    
     <body ng-app="testDafitiApp">
 
+        <base href="/test-dafiti/" />
+        <!--[if lte IE 8]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->        
         <header>
             <div class="container-fluid text-center">
                 <a href="#"><img src="https://dafitistatic-a.akamaihd.net/images/dafiti-logo.png" alt="Dafiti"></a>
@@ -46,14 +50,14 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/services/settings.js"></script>
+        <script src="scripts/services/apimethods.js"></script>
+        <script src="scripts/directives/menuleft.js"></script>
         <script src="scripts/controllers/myaccount.js"></script>
         <script src="scripts/controllers/addresslist.js"></script>
         <script src="scripts/controllers/orderhistory.js"></script>
         <script src="scripts/controllers/wishlist.js"></script>
-        <script src="scripts/services/settings.js"></script>
-        <script src="scripts/services/apimethods.js"></script>
-        <script src="scripts/directives/menuleft.js"></script>
-        
         <!-- endbuild -->
+        
     </body>
 </html>

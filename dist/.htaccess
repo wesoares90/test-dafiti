@@ -1,0 +1,14 @@
+<Ifmodule mod_rewrite.c>
+
+RewriteEngine On
+Options FollowSymLinks
+
+RewriteBase /test-dafiti/
+
+RewriteRule .*(styles.*) $1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.html [L]
+
+</IfModule>

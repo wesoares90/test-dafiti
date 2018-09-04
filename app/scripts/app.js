@@ -19,7 +19,7 @@ angular
 ])
 .config(function ($routeProvider, $locationProvider, $httpProvider) {
 $routeProvider
-    .when('/my-account', {
+    .when('/', {
         templateUrl: 'views/my-account.html',
         controller: 'MyaccountCtrl',
         controllerAs: 'account'

@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-md-3">
+        <menuleft></menuleft>
+    </div>
+    <div class="col-md-9">
+		<h5 class="title">lista de endereço <a data-toggle="modal" data-target="#modal-new">Cadastrar endereço</a></h5>
+		<div ng-include="'views/modal.html'"></div>
+		<div  ng-repeat="item in address.detail">
+	    	<form name="formaddress" class="grid" novalidate>
+	    		<div>
+	    			<label ng-if="!labelEdit">{{item.fullName}}</label>
+	    			<input type="text" class="form-control" name="fullName" ng-model="fullName" ng-init="fullName = item.fullName" ng-if="labelEdit">
+	    		</div>
+	    		<div>
+	    			
+	    			<span ng-if="!labelEdit">{{item.address}}</span>
+	    			<input type="text" class="form-control" name="addressItem" ng-model="addressItem" ng-init="addressItem = item.address" ng-if="labelEdit">
+	    			
+	    			<p ng-if="!labelEdit"><label>CEP: </label> {{item.postalCode}}</p>
+	    			<input type="text" class="form-control" name="postalCode" ng-model="postalCode" ng-init="postalCode = item.postalCode" ng-if="labelEdit">
+	    		</div>
+	    		<div>
+	    			<a class="btn btn-default" ng-model="labelEdit" ng-click="labelEdit = true" ng-hide="labelEdit">editar</a>
+					<a class="btn btn-default" ng-click="address.removeAddress(item.id)"  ng-hide="labelEdit">remover</a>
+
+					<a class="btn btn-default" ng-click="address.updateAddress(formaddress, item.id)"  ng-show="labelEdit">Salvar</a>
+					<a class="btn btn-default"  ng-click="labelEdit = false" ng-show="labelEdit">Cancelar</a>				
+	    		</div>
+	    	</form>
+    	</div>
+	</div> 
+</div>

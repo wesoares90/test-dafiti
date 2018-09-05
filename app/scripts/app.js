@@ -24,10 +24,10 @@ $routeProvider
         controller: 'MyaccountCtrl',
         controllerAs: 'account'
     })
-    .when('/adrress-list', {
-        templateUrl: 'views/adrress-list.html',
+    .when('/address-list', {
+        templateUrl: 'views/address-list.html',
         controller: 'AddresslistCtrl',
-        controllerAs: 'adrress'
+        controllerAs: 'address'
     }) 
     .when('/order-history', {
         templateUrl: 'views/order-history.html',

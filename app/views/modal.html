@@ -1,0 +1,38 @@
+<div class="modal fade" id="modal-new" tabindex="-1" role="dialog" aria-labelledby="modal-new" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-new">Novo endereço</h5>
+            </div>
+            <div class="modal-body">
+                <form name="form" novalidate>
+                    <div class="form-group">
+                        <label>Nome Completo:</label>
+                        <input type="text" class="form-control" name="fullName" ng-model="fullName"   ng-class="!form.fullName.$valid ? 'is-invalid' : 'is-valid'" required>
+                        <div ng-class="!form.fullName.$valid ? 'invalid-feedback' : ''" ng-show="!form.fullName.$valid">
+                            Este campo é obrigatório.
+                        </div>                    
+                    </div>
+                    <div class="form-group">
+                        <label>Endereço:</label>
+                        <input  type="text" class="form-control" name="addressItem" ng-model="addressItem" ng-class="!form.addressItem.$valid ? 'is-invalid' : 'is-valid'" required>
+                        <div ng-class="!form.addressItem.$valid ? 'invalid-feedback' : ''" ng-show="!form.addressItem.$valid">
+                            Este campo é obrigatório.
+                        </div>   
+                    </div>
+                    <div class="form-group">
+                        <label>CEP:</label>
+                        <input  type="text" class="form-control" name="postalCode" ng-model="postalCode" ng-class="!form.postalCode.$valid ? 'is-invalid' : 'is-valid'" required>
+                        <div ng-class="!form.postalCode.$valid ? 'invalid-feedback' : ''" ng-show="!form.postalCode.$valid">
+                            Este campo é obrigatório.
+                        </div>   
+                    </div>                    
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" type="button" data-dismiss="modal">Cancelar</button>
+                <button class="btn btn-default" ng-disabled="!form.fullName.$valid || !form.addressItem.$valid || !form.postalCode.$valid" type="button" data-dismiss="modal" ng-click="address.newAddress(form)">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -6,11 +6,18 @@ header {
     margin-bottom: 20px;
 }
 
-h5 {
+h5.title {
     font-weight: bold;
     border-bottom: 1px solid #CCC;
     padding: 3px 0 10px 0;
     margin: 0 0 3px 0;
+    a {
+        float: right;
+        font-size: 12px;
+        top: 4px;
+        position: relative;
+        cursor: pointer;
+    }
 }
 
 .information {
@@ -26,4 +33,23 @@ h5 {
 
 .m-30 {
 	margin: 30px 0;
+}
+
+
+
+
+
+.grid {
+    align-items: baseline;
+    display: flex;
+    background-color: #F6F6F6;
+    margin: 6px 0;
+    div {
+        flex-grow: 2;
+        padding: 16px;
+        width: 20%;
+    }
+    input {
+        margin-bottom: 5px;
+    }
 }

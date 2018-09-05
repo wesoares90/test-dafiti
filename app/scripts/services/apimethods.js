@@ -10,12 +10,16 @@
 angular.module('testDafitiApp')
 .factory('ApiMethods', function ($resource) {
 
-    return $resource('https://test-dafiti.herokuapp.com/:route/:update/:userId', { }, {
+    return $resource('https://test-dafiti.herokuapp.com/:route/:delete/:update/:userId/', {  }, {
         
         query: { 
-            method: 'GET', 
+            method: 'GET',
             isArray: false
         },
+        queryArray: { 
+            method: 'GET',
+            isArray: true
+        },        
         remove: { 
             method: 'DELETE',
             delete: '@delete'

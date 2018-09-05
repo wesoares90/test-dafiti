@@ -34,7 +34,7 @@ angular.module('testDafitiApp')
 
 		$public.btnDisabled = true;
 
-		var formData = settings.normalizeData(input);
+		var formData = settings.normalizeDataMyAccount(input);
 
 		ApiMethods.update({route: 'myAccount', update:$private.userId }, formData, function(data) {
  	

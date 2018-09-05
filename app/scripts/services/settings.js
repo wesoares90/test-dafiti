@@ -22,7 +22,7 @@ angular.module('testDafitiApp')
 			},
 			{
 				label: 'Endereços de endrega',
-				link: 'adrress-list'
+				link: 'address-list'
 			},
 			{
 				label: 'Histórico de pedido',
@@ -38,7 +38,7 @@ angular.module('testDafitiApp')
 		return $public.itensMenu;
 	};
 
-	$public.normalizeData = function(input) {
+	$public.normalizeDataMyAccount = function(input) {
 
 		var form = {
 			name: input.firstName.$modelValue,
@@ -50,6 +50,19 @@ angular.module('testDafitiApp')
 		return	form;	
 
 	};
+
+	$public.normalizeDataAdressList = function(input) {
+
+		var form = {
+			fullName: input.fullName.$modelValue,
+			address: input.addressItem.$modelValue,
+			postalCode: input.postalCode.$modelValue
+
+		};
+
+		return	form;	
+
+	};	
 
 
 });

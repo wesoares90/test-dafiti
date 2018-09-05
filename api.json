@@ -9,8 +9,22 @@
   ],
   "addressList": [
     {
-      "address": "Rua 1",
-      "cep": "02813020"
+      "fullName": "João Santos",
+      "address": "Alameda Barão de limeiray",
+      "postalCode": "02813-020",
+      "id": 2
+    },
+    {
+      "fullName": "Ana ferraz",
+      "address": "Pirituba",
+      "postalCode": "03678-952",
+      "id": 3
+    },
+    {
+      "fullName": "Novo cadastro",
+      "address": "Taipas",
+      "postalCode": "02813-960",
+      "id": 4
     }
   ]
 }

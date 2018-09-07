@@ -4,5 +4,13 @@
     </div>
     <div class="col-md-9">
 		<h5 class="title">Lista de desejos</h5>
+    	<div class="col-md-3 text-center box" ng-repeat="item in wishlist.detail">
+    		<a href="#" ng-click="wishlist.removeWishlist(item.id)"class="remove"><span class="glyphicon glyphicon-remove"></span></a>
+			<img src="{{item.productImages}}">
+			<p>{{item.productName}}</p>
+			<span>{{item.productDescription}}</span>
+			<a hred="#" class="btn btn-default buy">Comprar</a>
+		</div>
+    </div>  		
     </div>    
 </div>

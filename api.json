@@ -26,5 +26,58 @@
       "postalCode": "02813-960",
       "id": 4
     }
-  ]
+  ],
+  "orderhistory": [
+    {
+      "id":1,
+      "productName": "Cueca Kalvin Klein",
+      "productDescription": "Kit 3pçs Cuecas Calvin Klein Underwear Boxer Preto",
+      "productImages": "https://dafitistatic-a.akamaihd.net/p/Calvin-Klein-Underwear-Kit-3p%C3%A7s-Cuecas-Calvin-Klein-Underwear-Boxer-Preto-7524-6145071-1-related.jpg",
+      "purchaseDate": "23 Mai 2018"
+    },
+    {
+      "id":2,
+      "productName": "Mochila",
+      "productDescription": "Mochila Quiksilver Mini Night Track Azul",
+      "productImages": "https://dafitistatic-a.akamaihd.net/p/Quiksilver-Mochila-Quiksilver-Mini-Night-Track-Azul-7557-2851681-1-related.jpg",
+      "purchaseDate": "01 jun 2018"
+    },
+    {
+      "id":3,
+      "productName": "G-Shock",
+      "productDescription": "Relógio G-Shock DW-6900BR-5DR Marrom",
+      "productImages": "https://dafitistatic-a.akamaihd.net/p/G-Shock-Rel%C3%B3gio-G-Shock-DW-6900BR-5DR-Marrom-1216-6617831-1-related.jpg",
+      "purchaseDate": "05 fev 2017"
+    },
+    {
+      "id":4,
+      "productName": "FiveBlu",
+      "productDescription": "Bota FiveBlu Amarela",
+      "productImages": "https://dafitistatic-a.akamaihd.net/p/FiveBlu-Bota-FiveBlu-Amarela-0177-0854561-1-related.jpg",
+      "purchaseDate": "28 Mai 2018"
+    }            
+  ],
+  "wishlist": [
+    {
+      "id":1,
+      "productName": "Cueca Kalvin Klein",
+      "productDescription": "Kit 3pçs Cuecas Calvin Klein Underwear Boxer Preto",
+      "productImages": "https://dafitistatic-a.akamaihd.net/p/Calvin-Klein-Underwear-Kit-3p%C3%A7s-Cuecas-Calvin-Klein-Underwear-Boxer-Preto-7524-6145071-1-related.jpg",
+      "purchaseDate": "23 Mai 2018"
+    },
+    {
+      "id":2,
+      "productName": "Mochila",
+      "productDescription": "Mochila Quiksilver Mini Night Track Azul",
+      "productImages": "https://dafitistatic-a.akamaihd.net/p/Quiksilver-Mochila-Quiksilver-Mini-Night-Track-Azul-7557-2851681-1-related.jpg",
+      "purchaseDate": "01 jun 2018"
+    },
+    {
+      "id":3,
+      "productName": "G-Shock",
+      "productDescription": "Relógio G-Shock DW-6900BR-5DR Marrom",
+      "productImages": "https://dafitistatic-a.akamaihd.net/p/G-Shock-Rel%C3%B3gio-G-Shock-DW-6900BR-5DR-Marrom-1216-6617831-1-related.jpg",
+      "purchaseDate": "05 fev 2017"
+    }          
+  ]      
 }

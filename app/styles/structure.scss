@@ -36,14 +36,46 @@ h5.title {
 }
 
 
+.box {
 
+    border: 1px solid #CCC;
+    margin: 8px 4px;
+    padding: 12px;
+    
+    p {
+        margin-bottom: 20px;
+    }
+    
+    a.buy {
+        display: block;
+        margin-top: 20px;
+    }
+
+    a.remove {
+        float: right;
+        color: #CCC;
+        
+        right: 7px;
+        top: 7px;
+        position: absolute;
+    } 
+    
+    &:hover {
+
+        a.remove {
+            display: block;
+        }
+
+    }
+}
 
 
 .grid {
     align-items: baseline;
     display: flex;
-    background-color: #F6F6F6;
+    background-color: #ffff;
     margin: 6px 0;
+    border: 1px solid #CCC;
     div {
         flex-grow: 2;
         padding: 16px;

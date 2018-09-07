@@ -16,13 +16,14 @@ angular.module('testDafitiApp')
 	//Premissa que o usuário já está logado, caso não informe o parâmetro userId default será 1
 	$private.userId = $routeParams.userId || 1;
 
+	$public.apiRoute = 'myAccount';
 	$public.detail = {};
 	$public.viewEdit = false;
 	$public.btnDisabled = false;
 
 	$public.getAccount = function () {
 
-		ApiMethods.query({route: 'myAccount', userId:$private.userId }, function(data) {
+		ApiMethods.query({route: $public.apiRoute, userId:$private.userId }, function(data) {
  
 			$public.detail = data;
 
@@ -36,7 +37,7 @@ angular.module('testDafitiApp')
 
 		var formData = settings.normalizeDataMyAccount(input);
 
-		ApiMethods.update({route: 'myAccount', update:$private.userId }, formData, function(data) {
+		ApiMethods.update({route: $public.apiRoute, update:$private.userId }, formData, function(data) {
  	
  			$public.detail = data;
 			$public.viewEdit = false;

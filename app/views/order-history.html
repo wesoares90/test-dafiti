@@ -4,5 +4,18 @@
     </div>
     <div class="col-md-9">
 		<h5 class="title">historico de pedido</h5>
+		<div class="grid" ng-repeat="item in history.detail">
+	    	<div class="text-center">
+    			<img src="{{item.productImages}}">
+				<p>{{item.productName}}</p>
+			</div>
+    		<div>
+    			<p>{{item.productDescription}}</p>
+    		</div>
+    		<div>
+    			<label>Data da compra:</label>
+    			<span>{{item.purchaseDate}}</span>
+    		</div>    		
+    	</div>		
     </div>    
 </div>

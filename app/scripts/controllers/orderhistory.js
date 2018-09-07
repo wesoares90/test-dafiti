@@ -8,10 +8,29 @@
  * Controller of the testDafitiApp
  */
 angular.module('testDafitiApp')
-  .controller('OrderhistoryCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+.controller('OrderhistoryCtrl', function (ApiMethods) {
+
+	var $public = this;
+
+	$public.apiRoute = 'orderhistory';
+	$public.detail = {};
+
+	$public.getOrderhistory = function () {
+
+		ApiMethods.queryArray({route: $public.apiRoute }, function(data) {
+ 
+			$public.detail = data;
+
+		});
+
+	};
+
+	$public.init = function () {
+
+		$public.getOrderhistory();
+
+	};
+
+	$public.init();
+	
+});

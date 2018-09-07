@@ -27,8 +27,6 @@ angular.module('testDafitiApp')
 
 	$public.removeWishlist = function (id) {
 
-		console.log(id);
-
 		ApiMethods.remove({route: $public.apiRoute, delete:id}, function(data) {
 
 			$public.getWishlist();
